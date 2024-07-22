@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-gap: 1em;
+  align-items: center;
+}
+
+.telephone {
+  width: 200px;
+  height: 30px;
+  margin-left: 1em;
+}
+
+#email {
+  display: flex;
+}
+
+.email {
+  width: 350px;
+  height: 30px;
+  margin-left: 1em;
+}
+
+h3 {
+  margin-top: 2em;
+}
+
+
+.personal-reference {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: auto;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.toggle {
+
+  margin-left: 1em;
+  align-items: center;
+}
+
+.ref-one {
+  display: inline-block;
+  height: 40px;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.active{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slide-toggle {
+  margin-left: 3em;
+}

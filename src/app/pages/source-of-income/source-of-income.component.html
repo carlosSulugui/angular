@@ -1,0 +1,80 @@
+<section>
+
+  <div class="container">
+    <div class="flex">
+      <div class="flex-item">
+        <div>
+          <label>Negosio Propio</label>
+          <mat-icon>priority_high</mat-icon>
+        </div>
+        <mat-slide-toggle [(ngModel)]="bisnes" (ngModelChange)=" handleToggleChange('bisnes') "/>
+      </div>
+      <div class="flex-item">
+        <div>
+          <label>Relacion de dependenci</label>
+          <mat-icon>priority_high</mat-icon>
+        </div>
+        <mat-slide-toggle [(ngModel)]="relations" (ngModelChange)="handleToggleChange('relations')"/>
+      </div>
+      <div class="flex-item">
+        <div>
+          <label>Otros ingresos</label>
+          <mat-icon>priority_high</mat-icon>
+        </div>
+        <mat-slide-toggle [(ngModel)]="other" (ngModelChange)="handleToggleChange('other')"/>
+      </div>
+
+      <div>
+        <p>Ingresos: </p>
+        <input class="income" type="text" name="ingresos"/>
+      </div>
+      <div>
+        <p>Egresos: </p>
+        <input class="income" type="text" name="ingresos"/>
+      </div>
+      <div>
+        <p>Saldo: </p>
+        <input class="income" type="text" name="ingresos"/>
+      </div>
+    </div>
+
+
+    <!--    como puedo renderizar cada compomponent de cada toggle seleccionado -->
+    @if (bisnes || relations || other) {
+      @for (item of components; track $index) {
+        <p [class.active]="activeComponet" (click)="(activeComponet = item) && hiddenButton($index)">{{ item.name }}</p>
+      }
+      @for (item of components; track $index) {
+        @if (activeComponet === item) {
+          <!--           -->
+
+          <ng-container [ngComponentOutlet]="item.component"></ng-container>
+
+          <p [class.active]="activeComponet" (click)="(activeComponet = item) && showComponent($index)">{{ item.name }}</p>
+
+
+        }
+
+      }
+    }
+
+
+    <!--    @if (bisnes) {-->
+    <!--      <div>-->
+    <!--        <p class="component-bisnes">Negocio Propio</p>-->
+    <!--      </div>-->
+    <!--      <ng-container [ngComponentOutlet]="BisnesComponent"></ng-container>-->
+    <!--      <p>otro negocios relacionales</p>-->
+    <!--      <p>otros ingresos</p>-->
+    <!--    }-->
+    <!--    @if (relations) {-->
+
+    <!--      <ng-container [ngComponentOutlet]="SpecialtyComponent"></ng-container>-->
+    <!--    }-->
+    <!--    @if (other) {-->
+    <!--      <ng-container [ngComponentOutlet]="UserComponent"></ng-container>-->
+    <!--      <p>otro negocios relacionales</p>-->
+    <!--      <p>otros ingresos</p>-->
+    <!--    }-->
+  </div>
+</section>

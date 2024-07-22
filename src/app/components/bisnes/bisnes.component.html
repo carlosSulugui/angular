@@ -1,0 +1,98 @@
+<section class="container">
+  <div class="content">
+    <div class="grid">
+      <div>
+        <div class="col-2">
+          <label for="type-bisnes">Tipo de negocio</label>
+          <select id="type-bisnes">
+            <option value="1">Restaurante</option>
+            <option value="2">Bar</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="name-bisnes">Nombre de negocio</label>
+          <input type="text" id="name-bisnes" name="type-bisnes">
+        </div>
+        <div class="col-2">
+          <label for="address-bisnes">Dirección del negocio</label>
+          <input type="text" id="address-bisnes" name="address-bisnes">
+        </div>
+        <div class="col-2">
+          <label for="phone-bisnes">Teléfono del negocio</label>
+          <input type="text" id="phone-bisnes" name="phone-bisnes">
+        </div>
+
+        <div class="col-2">
+          <label for="apertura">Año de apertura</label>
+          <input type="text" id="apertura" name="apertura">
+        </div>
+
+        <div class="col-3">
+          <div class="col-1">
+            <label for="mensaulidad">Ingresos mensales</label>
+            <input type="text" id="mensaulidad" name="mensaulidad">
+          </div>
+          <div class="col-1">
+            <label for="egresos">Egresos Mensuales</label>
+            <input type="text" id="egresos" name="egresos">
+          </div>
+          <div class="col-1">
+            <label for="ingresos">Saldo mensual</label>
+            <input type="text" id="ingresos" name="ingresos">
+          </div>
+
+        </div>
+        <div class="flex-2">
+          <button class="btn"><mat-icon>cached</mat-icon>Agregar</button>
+          <button class="btn"><mat-icon>save</mat-icon>Actualizar</button>
+        </div>
+      </div>
+      <div>
+        <h3>Negocio(s) Registrado(s)</h3>
+        <div class="bisnes-content">
+          @if (bisnes$ | async; as items) {
+            @for (item of items; track $index) {
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-state">
+                    <p class="p">{{ $index + 1}}</p>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-header">
+                      <h3>{{ item.nameBisnes }}</h3>
+                      <div class="icon">
+                        <mat-icon>
+                          note_add
+                        </mat-icon>
+                        <mat-icon>
+                          power_settings_new
+                        </mat-icon>
+                      </div>
+                    </div>
+                    <p>{{ item.address }}</p>
+                    <div class="flex-items">
+                      <p>telefono: {{ item.tel }}</p>
+                      <p>Ingreso: {{ item.income }}</p>
+                    </div>
+                    <div class="flex">
+                      <p>anio: {{ item.year }}</p>
+                      <p>Egreso: {{ item.income }}</p>
+                      <p>Saldo: {{ item.expenses }}</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="card-content">
+                </div>
+              </div>
+            }
+          }
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>

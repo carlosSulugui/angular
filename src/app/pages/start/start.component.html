@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="activeSIF">
+      <img src="assets/active.png" [width]="500" [height]="500"/>
+    </div>
+
+
+    <div class="modules-sistem">
+      <h1>Módulos</h1>
+      <div class="modules">
+
+        @for (mode of modelsSistem; track $index) {
+          <div class="card" routerLink="{{mode.link}}"  >
+            <div class="card-content">
+            </div>
+            <h2>{{ mode.name }}</h2>
+          </div>
+        }
+        <p>Modulos del sistema</p>
+      </div>
+    </div>
+  </div>
+</div>

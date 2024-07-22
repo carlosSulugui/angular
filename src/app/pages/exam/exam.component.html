@@ -1,0 +1,70 @@
+<div class="container">
+
+  <a >ir ala otra pagina</a>
+  <div class="content">
+    <div class="aside">
+      <div class="div-aside">
+        <ul>
+          <li>
+            <div class="div">
+              <mat-icon>person</mat-icon>
+              <span>Cliente Individual</span>
+            </div>
+          </li>
+          <li>
+            <div class="div">
+              <mat-icon>format_list_bulleted</mat-icon>
+              <span>Opcion 2 </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modules-sistem">
+      <div class="step-header">
+        <div class="steps">
+          @for (step of steps; track $index) {
+            <div class="step-level">
+              <div class="step-circle">
+                <p>{{ step.step }}</p>
+              </div>
+              <h2>{{ step.label }}</h2>
+            </div>
+          }
+        </div>
+        <div class="button-operation">
+          <button mat-raised-button color="primary" routerLink="/pages/medic">Siguiente</button>
+          <button mat-raised-button color="warn">Cancelar</button>
+
+        </div>
+      </div>
+
+
+      <!--      como hacer un mat tab sin usar los recursos de material angula r -->
+
+
+      <div class="container-modules">
+        <div class="tab">
+          @for (tab of tabs; track $index) {
+            <div class="tabs">
+              <button class="module" [class.active]="activeTabs === tab" (click)="activeTabs = tab">{{ tab.label }}
+              </button>
+            </div>
+          }
+        </div>
+        <div class="view-modules">
+          @for (tab of tabs; track $index) {
+            @if (activeTabs === tab) {
+              <ng-container [ngComponentOutlet]="tab.component"></ng-container>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

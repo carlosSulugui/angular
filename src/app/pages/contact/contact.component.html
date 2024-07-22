@@ -1,0 +1,101 @@
+<section>
+  <div class="container">
+    <div class="contact">
+      <div>
+        <label for="telephone-one">Telefono Movil 1</label>
+        <input class="telephone" type="text" name="telephone-one" id="telephone-one">
+        <mat-icon>whatsapp</mat-icon>
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+      </div>
+      <div>
+        <label for="telephone-home">Telefono de casa</label>
+        <input class="telephone" type="text" name="telephone-two" id="telephone-home">
+      </div>
+      <div id="email">
+        <label for="email-one">Correo electronico 1</label>
+        <input class="email" type="email" name="telephone-three" id="email-one">
+      </div>
+      <div>
+        <label for="telephone-one">Telefono Movil 2</label>
+        <input class="telephone" type="text" name="telephone-two" id="telephone-two">
+        <mat-icon>whatsapp</mat-icon>
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+      </div>
+      <div>
+
+      </div>
+      <div id="email-2">
+        <label for="email-two">Correo electronico 1</label>
+        <input class="email" type="email" name="telephone-three" id="email-two">
+      </div>
+    </div>
+    <h3>Referencias Lobares</h3>
+    <div class="personal-reference">
+      <div>
+        <label for="name-one">Referencia 1</label>
+        <input class=email type="text" name="name-one" id="name-one">
+      </div>
+      <div class="ref-one">
+        <label for="ref-tel-one">Telefono 1</label>
+        <input class="email" type="text" name="telephone-one" id="ref-tel-one">
+        <mat-icon class="toggle">call</mat-icon>
+        <mat-slide-toggle class="toggle">Slide me!</mat-slide-toggle>
+      </div>
+    </div>
+    <div class="personal-reference">
+      <div>
+        <label for="ref-tel-two">Referencia 2</label>
+        <input class=email type="text" name="name-one" id="ref-tel-two">
+      </div>
+      <div class="ref-one">
+        <label for="tel-two">Telefono 2</label>
+        <input class="email" type="text" name="telephone-one" id="tel-two">
+        <mat-icon class="toggle">call</mat-icon>
+        <mat-slide-toggle class="toggle">Slide me!</mat-slide-toggle>
+      </div>
+    </div>
+    <div class="personal-reference">
+      <div>
+        <label for="ref-tel-three">Referencia 2</label>
+        <input class=email type="text" name="name-one" id="ref-tel-three">
+      </div>
+      <div class="ref-one">
+        <label for="tel-three">Telefono 2</label>
+        <input class="email" type="text" name="telephone-one" id="tel-three">
+        <mat-icon class="toggle">call</mat-icon>
+        <mat-slide-toggle class="toggle">Slide me!</mat-slide-toggle>
+      </div>
+    </div>
+    <div class="active">
+      <h3>Referencias Lobares</h3>
+      <mat-slide-toggle class="slide-toggle" [(ngModel)]="edit"></mat-slide-toggle>
+    </div>
+
+    @if (edit) {
+      <div class="personal-reference">
+        <div>
+          <label for="ref-1">Referencia 1</label>
+          <input class=email type="text" name="ref-1" id="ref-1">
+        </div>
+        <div class="ref-one">
+          <label for="ref-tel-1">Telefono </label>
+          <input class="email" type="text" name="ref-tel-1" id="ref-tel-1">
+          <mat-icon class="toggle">call</mat-icon>
+          <mat-slide-toggle class="toggle"></mat-slide-toggle>
+        </div>
+      </div>
+      <div class="personal-reference">
+        <div>
+          <label for="ref-2">Referencia 2</label>
+          <input class=email type="text" name="ref-2" id="ref-2">
+        </div>
+        <div class="ref-one">
+          <label for="ref-tel-2">Telefono </label>
+          <input class="email" type="text" name="ref-tel-2" id="ref-tel-2">
+          <mat-icon class="toggle">call</mat-icon>
+          <mat-slide-toggle class="toggle"></mat-slide-toggle>
+        </div>
+        </div>
+    }
+  </div>
+</section>

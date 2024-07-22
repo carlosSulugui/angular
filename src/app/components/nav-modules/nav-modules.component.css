@@ -1,0 +1,68 @@
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+
+}
+
+.logo-cliente {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.nav .ul {
+  border: 1px solid #000;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav .ul li {
+  list-style: none;
+}
+
+.log-user {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #000;
+}
+
+
+.modules {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items{
+  text-align: center;
+}
+.mat-icon {
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  text-align:center;
+}
+
+.circle {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

@@ -1,0 +1,132 @@
+<section class="container">
+  <div>
+    <h1>Documento(a) de identificacion</h1>
+    <div class="row-3">
+      <div class="button-header">
+        <button class="button-new">Nuevo
+          <mat-icon>my_library_add</mat-icon>
+        </button>
+      </div>
+      <div class="card-content">
+        @for (item of identification; track $index) {
+          <div class="card-body" [style.border-color]="colors[$index % colors.length].value">
+            <div>
+              <p>Tipo: {{ item.type }}</p>
+              <p>Numero: {{ item.number }}</p>
+              <p>Estado: {{ item.state }}</p>
+              <p>Digitalizacion: {{ item.digatalization }}</p>
+            </div>
+            <div class="label">
+              <mat-icon>star</mat-icon>
+              <mat-icon>priority_high</mat-icon>
+            </div>
+          </div>
+
+        }
+      </div>
+    </div>
+  </div>
+  <div>
+    <h1>Nacionalidades</h1>
+    <div class="row-3">
+      <div class="nationality-row">
+        <div class="address-client">
+          <p>Pais</p>
+          <input type="text"/>
+          <select class="nationality">
+            <option value="1">Nacional</option>
+            <option value="2">Extranjero</option>
+          </select>
+        </div>
+        <p>Condiciones Migratorio</p>
+        <div class="migration">
+          <select class="nationality">
+            <option value="1">Residente</option>
+            <option value="2">Turista</option>
+            <option value="3">Diplomatico</option>
+          </select>
+          <mat-icon>my_library_add</mat-icon>
+        </div>
+        <!--        como hacer una tabla-->
+        <div class="table">
+          <table>
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nacionalidad</th>
+              <th>Condiciones</th>
+              <th>Acciones</th>
+
+            </tr>
+            </thead>
+            <tbody>
+              @for (city of data; track $index) {
+                <tr>
+                  <td [style.background-color]="tableColors[$index % tableColors.length]"> {{ city.id }}</td>
+                  <td [style.background-color]="tableColors[$index % tableColors.length]">{{ city.city }}</td>
+                  <td [style.background-color]="tableColors[$index % tableColors.length]">{{ city.country }}</td>
+                  <td [style.background-color]="tableColors[$index % tableColors.length]">
+                    <button class="button-edit">
+                      <mat-icon>edit</mat-icon>
+                    </button>
+                    <button class="button-delete">
+                      <mat-icon>delete_sweep</mat-icon>
+                    </button>
+
+                </tr>
+              }
+            </tbody>
+
+          </table>
+        </div>
+        <div class="update">
+          <p>hullas registradas</p>
+          <button class="button-update">
+            <mat-icon>visibility</mat-icon>
+            <span>Actualizar</span>
+          </button>
+        </div>
+        <div class="fingerprint">
+          <div class="fingerprint-items">
+
+          </div>
+          <div class="fingerprint-items">
+
+          </div>
+          <div class="fingerprint-items">
+
+          </div>
+          <div class="fingerprint-items">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="header-photo">
+      <h1>Fotografia</h1>
+      <button class="button-update">
+        Nuevo
+        <mat-icon>my_library_add</mat-icon>
+      </button>
+    </div>
+    <div class="photo">
+
+    </div>
+    <div class="registered-signatures">
+      <p>Firmas Registradas</p>
+      <button class="button-update">
+        <span>Nuevo</span>
+        <mat-icon>my_library_add</mat-icon>
+      </button>
+    </div>
+    <div class="signatures">
+
+    </div>
+  </div>
+
+</section>
+
+

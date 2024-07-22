@@ -1,0 +1,165 @@
+<section>
+  <form>
+    <div>
+      <div class="names">
+        <div class="layout">
+          <label for="name">Primer Nombre</label>
+          <input class="form-name" type="text" id="name" name="name" required>
+        </div>
+        <div class="layout">
+          <label for="second-name">Segundo Nombre</label>
+          <input class="form-name" type="text" id="second-name" name="name" required>
+        </div>
+        <div class="layout">
+          <label for="other-name">Otro Nombre</label>
+          <input class="form-name" type="text" id="other-name" name="name" required>
+        </div>
+      </div>
+      <div class="last-name">
+        <div class="layout">
+          <label for="surname">Primer Apellido</label>
+          <input class="form-name" type="text" id="surname" name="surname" required>
+        </div>
+        <div class="layout">
+          <label for="second-surname">Segundo Apellido</label>
+          <input class="form-name" type="text" id="second-surname" name="second-surname" required>
+        </div>
+        <div class="layout">
+          <label for="other-surname">Apellida Casada</label>
+          <input class="form-name" type="text" id="other-surname" name="other-surname" required>
+        </div>
+      </div>
+      <div class="layout">
+        <label for="name-complete">Nombre Completa</label>
+        <input class="name-complete" type="text" id="name-complete" name="name-complete" required>
+      </div>
+
+    </div>
+
+    <div class="state">
+      <div class="information-user">
+        <div class="info-user">
+          <div class="birthdate">
+            <label for="date">Documento de Identidad</label>
+          </div>
+          <div class="box">
+            <input type="date" id="date" name="date"/>
+            <label for="age">Edad</label>
+            <input type="text" id="age" name="age"/>
+            <fa-icon [icon]="faSmile"></fa-icon>
+            <i class="fa-regular fa-face-cowboy-hat"></i>
+          </div>
+          <div class="birthdate">
+            <label for="ststus_civil">Estado Civil</label>
+          </div>
+          <div class="box">
+            <select id="status_civil">
+              <option>Casado</option>
+              <option>Soltero</option>
+              <option>Divorciado</option>
+              <option>Viudo</option>
+            </select>
+          </div>
+          <div class="birthdate">
+            <label for="gender">Sexo</label>
+          </div>
+          <div class="box">
+            <select id="gender">
+              <option>Hombre</option>
+              <option>Mujer</option>
+            </select>
+          </div>
+          <div class="birthdate">
+            <label for="work">Sexo</label>
+          </div>
+          <div class="box">
+            <input type="text" id="work" name="work"/>
+            <select>
+              <option>Carpintero</option>
+              <option>Jornalero</option>
+            </select>
+          </div>
+          <div class="birthdate">
+            <label for="nit">NIT</label>
+          </div>
+          <div class="box">
+            <input type="text" id="nit"/>
+          </div>
+          <div class="birthdate">
+            <label for="rtu">Actividad Economica RTU </label>
+          </div>
+          <div class="box">
+            <input type="text" id="rtu"/>
+            <select>
+              <option>Hombre</option>
+              <option>Mujer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="account">
+          <div class="info-user">
+            <div class="birthdate">
+              <label for="acts">Actua en nombre propio</label>
+            </div>
+            <div class="box">
+              <mat-slide-toggle id="acts" name="acts">Slide me!</mat-slide-toggle>
+              <button>
+                <div>
+                  <mat-icon>visibility</mat-icon>
+                  <span>Detalle</span></div>
+              </button>
+            </div>
+            <div class="birthdate">
+              <label for="pep">Es PEP?</label>
+            </div>
+            <div class="box">
+              <mat-slide-toggle id="pep" name="acts">Slide me!</mat-slide-toggle>
+              <button>
+                <div>
+                  <mat-icon>visibility</mat-icon>
+                  <span>Detalle</span></div>
+              </button>
+            </div>
+            <div class="birthdate">
+              <label for="parent">Es pariente PEP? </label>
+            </div>
+            <div class="box">
+              <mat-slide-toggle id="parent" name="acts">Slide me!</mat-slide-toggle>
+              <button>
+                <div>
+                  <mat-icon>visibility</mat-icon>
+                  <span>Detalle</span></div>
+              </button>
+            </div>
+            <div class="birthdate">
+              <label for="asociate">Es asociado cercano PEP?</label>
+            </div>
+            <div class="box">
+              <mat-slide-toggle id="asociate" name="acts">Slide me!</mat-slide-toggle>
+              <button>
+                <div>
+                  <mat-icon>visibility</mat-icon>
+                  <span>Detalle</span></div>
+              </button>
+            </div>
+            <div class="birthdate">
+              <label for="cpe">Es CPE?</label>
+            </div>
+            <div class="box">
+              <mat-slide-toggle id="cpe" name="acts"></mat-slide-toggle>
+              <button>
+                <div>
+                  <mat-icon>visibility</mat-icon>
+                  <span>Detalle</span></div>
+              </button>
+            </div>
+            <textarea></textarea>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

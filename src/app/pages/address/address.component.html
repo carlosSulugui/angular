@@ -1,0 +1,90 @@
+<section>
+  <div class="container">
+    <div class="column-2">
+      <div class="address-content">
+        <div class="home-header">
+          <label for="home">Tenencia de Vivienda</label>
+          <select class="home" name="home" id="home">
+            <option value="1">Propia</option>
+            <option value="2">Alquilada</option>
+            <option value="3">Otro</option>
+          </select>
+
+          <label for="type-home">Tipo de vivienda</label>
+          <select class="home" name="type-home" id="type-home">
+            <option value="1">Casa</option>
+            <option value="2">Departamento</option>
+            <option value="3">Otro</option>
+          </select>
+        </div>
+        <div class="home-header">
+          <label for="address">Dirección</label>
+          <input type="text" name="address" id="address"/>
+          <label for="zone">Zona: </label>
+          <input type="text" name="zone" id="zone"/>
+        </div>
+        <div class="city">
+          <div>
+            <p>Pais</p>
+            <select class="select" name="country" id="country">
+              <option value="1">Argentina</option>
+              <option value="2">Brasil</option>
+              <option value="3">Chile</option>
+              <option value="4">Uruguay</option>
+            </select>
+          </div>
+          <div>
+            <p>Departamento</p>
+            <select class="select">
+              <option value="1">Canelones</option>
+              <option value="2">Maldonado</option>
+              <option value="3">Montevideo</option>
+              <option value="4">Rocha</option>
+            </select>
+          </div>
+          <div>
+            <p>Departamento</p>
+            <select class="select">
+              <option value="1">Atlántida</option>
+              <option value="2">Canelones</option>
+              <option value="3">La Floresta</option>
+              <option value="4">Las Toscas</option>
+            </select>
+          </div>
+        </div>
+        <div class="direction">
+          <label>Direccion Completa: </label>
+          <textarea name="direction"></textarea>
+        </div>
+        <div class="dependents">
+          <div class="dependents">
+            <label class="label" for="dependents">Dependientes Menores: </label>
+            <input class="dependents-inputs" type="number" name="dependents" id="dependents"/>
+          </div>
+          <div class="dependents">
+            <label class="label" for="dependents">Dependientes Mayores: </label>
+            <input class="dependents-inputs" type="number" name="elderly-dependents" id="elderly-dependents"/>
+          </div>
+          <div class="resides">
+            <label class="label" for="resides">Reside desde (año): </label>
+            <input class="dependents-inputs" type="number" name="elderly-dependents" id="resides"/>
+            <button class="button-scanner">Adjuntar esscaneo</button>
+          </div>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="maps">
+
+        </div>
+        <div class="coordinate">
+          <label for="coordinate">Coordenad: </label>
+          <input class="select" type="text" name="latitude" id="coordinate">
+          <input class="select" type="text" name="longitude" id="longitude">
+          <mat-icon>location_on</mat-icon>
+        </div>
+        <p class="distance">Distancia de la Agencia: 18 km </p>
+      </div>
+    </div>
+
+  </div>
+</section>

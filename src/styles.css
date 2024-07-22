@@ -1,1 +1,19 @@
+
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  width:auto;
+  box-sizing: border-box;
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: auto;
+}
+
+
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

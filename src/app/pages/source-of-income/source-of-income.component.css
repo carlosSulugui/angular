@@ -1,0 +1,27 @@
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.flex-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.income{
+  height: 30px;
+}
+
+.active {
+  width: 100%;
+  background-color: #609be6;
+  color: #fff;
+
+}
+
+

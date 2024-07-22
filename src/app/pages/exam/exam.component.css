@@ -1,0 +1,162 @@
+::ng-deep .mat-tab {
+  color: #000 !important; /* Cambia el color del texto */
+  background-color: #3f51b5 !important; /* Cambia el color de fondo */
+  padding: 10px !important; /* Cambia el padding */
+  border-radius: 5px !important; /* Cambia el border radius */
+}
+
+mat-tab {
+  background-color: blue !important;
+}
+
+
+.mat-icon {
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.aside {
+  height:auto;
+  width: 400px;
+  border-right: 2px solid;
+
+
+}
+
+.div-aside {
+  height: 800px;
+
+
+}
+
+.div-aside ul li div {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  border: 1px solid;
+  text-align: center;
+  align-items: center;
+
+}
+
+.div {
+  text-align: center;
+  align-items: center;
+  height: 80px;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modules-sistem {
+  width: 100%;
+
+}
+
+
+.step-header {
+  display: flex;
+
+  justify-content: space-between;
+  height: 80px;
+
+}
+
+.steps {
+  width: 80%;
+  display: flex;
+  height: 80px;
+}
+
+.step-level {
+  width: 100%;
+  display: flex;
+  color: #000;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.button-operation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border: 1px solid;
+}
+
+button {
+  margin: 1em;
+}
+
+
+.container-modules {
+  height: auto;
+
+}
+
+
+.add-client {
+  height: 100%;
+  padding: 2em;
+  margin: 2em;
+}
+
+
+.tab {
+  position: relative;
+  margin-bottom: -5px ;
+  display: flex;
+  padding: 0;
+  margin-left: 4em;
+  margin-right: 4em;
+  align-items: center;
+  width: 100%;
+}
+.module.active {
+  border-bottom: none;
+  background: none;
+
+}
+
+.view-modules {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 2em;
+}
+
+
+.module {
+  background: none;
+  cursor: pointer;
+  margin: 0 ;
+  padding: 1em;
+  border-top-right-radius: 10px;
+  border: 2px solid #000;
+  background: #e6e3e3;
+}
+
+
+
+/*como pudo resaltar la pestnia seleccionada*/
+.mat-tab-label-active {
+  background: #3f51b5 !important;
+  color: #fff !important;
+}
